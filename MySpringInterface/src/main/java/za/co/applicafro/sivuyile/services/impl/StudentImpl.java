@@ -7,12 +7,11 @@ import za.co.applicafro.sivuyile.services.StudentInterface;
  */
 public class StudentImpl implements StudentInterface {
 
-    private String fname;
-    private String lname;
+    private String lname,fname;
 
-    public void addStudent(String fname,String lname) {
-        this.fname = fname;
+    public void addStudent(String fname, String lname) {
         this.lname = lname;
+        this.fname = fname;
     }
 
     public String getFname() {
@@ -24,6 +23,6 @@ public class StudentImpl implements StudentInterface {
     }
 
     public void printStudent() {
-        System.out.println("Student\nName: "+fname +"\nLast Name:"+lname);
+
     }
 }

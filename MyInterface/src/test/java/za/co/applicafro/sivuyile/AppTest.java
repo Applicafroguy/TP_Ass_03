@@ -1,38 +1,20 @@
 package za.co.applicafro.sivuyile;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+
+import org.junit.Assert;
+import org.junit.Test;
+import za.co.applicafro.sivuyile.services.impl.StudentImpl;
 
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-    extends TestCase
+public class AppTest
 {
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
+    @Test
+    public void add(){
+        StudentImpl student = new StudentImpl();
+        student.addStudent("sid","luko");
+        Assert.assertSame("sid",student.getFname());
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
 }

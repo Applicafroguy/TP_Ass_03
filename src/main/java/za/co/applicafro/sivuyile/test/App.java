@@ -1,4 +1,4 @@
-package za.co.applicafro.sivuyile;
+package za.co.applicafro.sivuyile.test;
 
 /**
  * Hello world!

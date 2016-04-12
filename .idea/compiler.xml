@@ -24,12 +24,14 @@
         <processorPath useClasspath="true" />
         <module name="MyCollection" />
         <module name="MyInterface" />
+        <module name="MySpringInterface" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Ass_03" target="1.5" />
       <module name="MyCollection" target="1.5" />
       <module name="MyInterface" target="1.5" />
+      <module name="MySpringInterface" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
